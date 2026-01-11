@@ -1,4 +1,8 @@
 📊 Development for Real-Time Competitor Strategy Tracker for E-commerce
+
+
+
+
 📌 Project Overview
 
 This project focuses on building an AI-driven system for analyzing book data and generating intelligent pricing decisions for e-commerce platforms.
