@@ -1,0 +1,85 @@
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    margin-bottom: 20px;
+}
+
+.links {
+    margin-top: 8px;
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    color: #1f6feb;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 18px;
+    background: #1f6feb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #222;
+}
+
+/* LINKS IN TABLE */
+td a {
+    color: #4ea1ff;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* SCROLLABLE TABLE */
+.table-container {
+    max-height: 420px;
+    /* ~10 rows visible */
+    overflow-y: auto;
+    border: 1px solid #333;
+}
+
+/* STICKY HEADER */
+thead th {
+    position: sticky;
+    top: 0;
+    background: #222;
+    z-index: 2;
+}

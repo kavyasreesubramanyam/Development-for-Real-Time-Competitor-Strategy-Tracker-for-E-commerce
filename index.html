@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI Book Price Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>AI-Driven Book Price Comparison</h1>
+        <div class="links">
+            <span>
+                Our Website:
+                <a href="https://books.toscrape.com" target="_blank">
+                    BooksToScrape
+                </a>
+            </span>
+            <span>
+                Competitor Website:
+                <a href="https://booksrun.com" target="_blank">
+                    BooksRun
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <!-- BUTTON -->
+    <button onclick="loadData()">Compare Prices</button>
+
+    <!-- TABLE (HIDDEN INITIALLY) -->
+    <div class="table-container" id="tableContainer" style="display:none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Book Title</th>
+                    <th>UPC</th>
+                    <th>ISBN-10</th>
+                    <th>ISBN-13</th>
+                    <th>Our Price (£)</th>
+                    <th>Competitor Price (£)</th>
+                    <th>Discount</th>
+                    <th>Final Price (£)</th>
+                    <th>Status</th>
+                    <th>Match Identifier</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
